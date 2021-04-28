@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../utilities.css">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Welcome to Arts of Finance</title>
+</head>
+
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i>Arts</span> of Finance
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="../#home">Home</a></li>
+          <li><a href="../#about">About</a></li>
+          <li><a href="../#cases">Cases</a></li>
+          <li><a href="../#blog">Blog</a></li>
+          <li><a href="../#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <section class="post">
+      <h2>
+        <%=post.blogTitle%>
+      </h2>
+      <p class="meta">
+        <i class="fas fa-user"></i>
+        Posted by <strong>
+          <%=post.authorName%>
+        </strong> | <%=post.postDate%>
+      </p>
+      <img src="<%=post.imageUrl%>" alt="">
+      <p>
+        <%=post.description%>
+      </p>
+    </section>
+  </main>
+
+  <div class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="#"><i class="fab fa-google fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2021 Art of Finance</p>
+  </div>
+</body>
+
+</html>
